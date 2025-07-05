@@ -53,9 +53,9 @@ name1 = "lasha"
 name2 = "gio"
 name3 = "saba"
 name4 = "nika"
+name5 = "luka"
 
-
-combine = name1 + name2 + name3 + name4
+combine = name1 + name2 + name3 + name4 + name5
 
 
 print(combine)
