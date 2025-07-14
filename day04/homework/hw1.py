@@ -33,12 +33,12 @@
 # #ეს არის ფლოატ ტიპის მონაცემი
 
 
-# number = 13
-# print(type(number))
-# country = "Georgia"
-# # print(type(country))
-# # price = 3.43
-# # print(type(price))
+number = 13
+print(type(number))
+country = "Georgia"
+print(type(country))
+price = 3.43
+print(type(price))
 
 
 # TEST = input("just write random word:  ")
