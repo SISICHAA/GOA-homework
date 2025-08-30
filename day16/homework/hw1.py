@@ -38,3 +38,30 @@ while True:
             break
         else:
             print("nahhh much stronger password")
+
+num = int(input("enter number: "))
+num1 = int(input("enter number: "))
+num2 = int(input("enter number: "))
+
+print("highest number is,", max(num, num1, num2))
+
+
+week = int(input("enter number between 1-7"))
+choice = week
+
+if choice == 1:
+    print("today is orshabati")
+elif choice == 2:
+    print("today is samshabati")
+elif choice == 3:
+    print("today is otxshabati")
+elif choice == 4:
+    print("today is xuthsbati")
+elif choice == 5:
+    print("today is paraskevi")
+elif choice == 6:
+    print("today is shabati")
+elif choice == 7:
+    print("today is kvira")
+else:
+    print("i dont know that day")
