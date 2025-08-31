@@ -24,7 +24,7 @@ elif number == 2:
 
 
 
-if number == 3:
+elif number == 3:
     print("gazafxuli")
 elif number == 4:
     print("gazafxuli")
@@ -52,15 +52,10 @@ elif number == 11:
 else:
     print("wrong input")
 
-
-name = str(input("enter your name please"))
-
-password = str("enter your password")
-
-
-if name == "admin:":
-    print(f"{password}")
-elif password == "adminpasword123:":
-    print("salami admin")
+if input("enter your name") == "admin":
+    if input("enter admins password") == "adminis paroli":
+        print("salami admin")
+    else:
+        print("wrong input")
 else:
-    print("salami momxmarebelo")
+    print("hi user")
