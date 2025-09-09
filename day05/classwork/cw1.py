@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #შედარების ოპერაციები
 
 
@@ -26,4 +27,13 @@
 
 #and and or
     
+=======
+first = int(input("enter first number:  "))
+second = int(input("enter second number: "))
+
+
+print(first > second)
+print(first < second)
+print(first == second)
+>>>>>>> 21cdacabaf5ae6528f968416be7c208464b9758e
 
