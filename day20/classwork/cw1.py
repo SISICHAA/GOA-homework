@@ -11,4 +11,8 @@ print(324 % 231)
 print(3423 % 123)
 print(123 % 23)
 
-#siebi da cvladebi gansxvavdebian cvladebshi shegvidzlia marto erti mnishvnelobis shenaxva xolo siebshi uamravis
+#siebi da cvladebi gansxvavdebian cvladebshi shegvidzlia marto erti mnishvnelobis shenaxva xolo siebshi uamravis siebs viyenebt mravali monacemis ert adgilas shesanaxad
+
+list_GOA = [123,32.32,True,"saava"]
+print(list_GOA)
+
