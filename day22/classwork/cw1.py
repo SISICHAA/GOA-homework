@@ -14,9 +14,9 @@ print(list[9])
 
 listt = ["kitri" , "pomidori", "kartofili", "xaxvi", "niori" , "brokoli"]
 
-listt[1] = "viri"
+listt[0] = "viri"
 listt[3] = "tagvit"
 listt[5] = "bokveri"
-print(listt[1])
+print(listt[0])
 print(listt[3])
 print(listt[5])
