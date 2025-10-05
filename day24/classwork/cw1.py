@@ -15,6 +15,8 @@ name3 = "nita"
 name4 = "lassha"
 
 list = [name, name1, name2, name3, name4]
+
 print(list[-1])
-print(list[-2])
-print(list[-3])
+
+name = "irakli"
+print(name[-3])

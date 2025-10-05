@@ -3,8 +3,9 @@
 numbers = [1, 230, 23, 22, 1121, 69, 111]
 
 
-print(numbers[-3])
-print(numbers[-4])
+print(numbers[-1] * numbers[-7])
+print(numbers[-3] * numbers[-5])
+
 
 
 
@@ -33,30 +34,10 @@ else:
 
 list = ["dog" ," most" ,"is" ,"angry" ,"running", "the" , "forest", "fast", "in" , "cat" ,"human", "very"]
 
+ 
+print(list[-12], list[-10],  list[-8],  list[-4], list[-7], list[-6], list[-1], list[-5])
+print(list[5], list[9], list[2],list[11], list[3])
 
-print(list[-12])
-
-
-print(list[-10])
-
-print(list[-8])
-print(list[-4])
-
-print(list[-7])
-print(list[-6])
-
-print(list[-1])
-print(list[-5])
-
-
-print(list[5])
-
-print(list[9])
-print(list[2])
-
-print(list[11])
-
-print(list[3])
 
 
 
@@ -90,17 +71,17 @@ else:
 
 
 
-index = int(input("enter a symbol: "))
+index = input("enter a word: ")
 
 word1 = ("a")
 
 word2 = ("z")
 
 
-if index == word1:
+if index[0] == word1:
     print("სიტყვა იწყება a-თი")
 
-elif index == word2:
+elif index[-1] == word2:
     print("სიტყვა მთავრდება z-თი ")
 
 else:
@@ -111,33 +92,34 @@ else:
 
 first_word = input("enter a word: ")
 
-second_word = input("enter a second word: ")
 
-if first_word == second_word:
+if first_word[-1] == first_word[0]:
     print("პირველი და ბოლო ერთნაირია")
 else:
     print("პირველი და ბოლო განსხვავებულია")
 
 GOA = "agivorsbgitr"
 
-print(GOA[1])
-print(GOA[4])
-print(GOA[1])
-print(GOA[0])
+print(GOA[1] +  GOA[4] + GOA[1] + GOA[0])
 
 
-print(GOA[6])
-print(GOA[0])
-print(GOA[7])
-print(GOA[0])
+print(GOA[6] +  GOA[0] +  GOA[7] + GOA[0])
 
 
-print(GOA[7])
-print(GOA[0])
-print(GOA[10])
-print(GOA[2])
-print(GOA[3])
-print(GOA[0])
-print(GOA[5])
+print(GOA[7] + GOA[0] + GOA[10] + GOA[2] + GOA[3] + GOA[0] + GOA[5])
 
 
+
+
+string = "giorgi"
+
+
+for i in string:
+    print(i)
+
+
+i = 0
+
+while i < 6:
+    print(string[i])
+    i += 1
