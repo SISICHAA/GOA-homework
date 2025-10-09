@@ -27,18 +27,9 @@ print(ww[-9 : -4])
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 
 
-print(letters[0])  
+print(letters[0], letters[2], letters[4])  
 
-print(letters[2])   
-
-
-print(letters[4])   
-
-print(letters[-7])  
-
-print(letters[-5]) 
-
-print(letters[-3])  
+print(letters[-7], letters[-5], letters[-3])  
 
 
 
