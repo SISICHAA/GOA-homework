@@ -109,7 +109,7 @@ text = "hello"
 text2 = "World"
 
 if text != text2:
-    print("ეს ორი სტრინგი არ არის ტოლი")
+    print("arari toli")
 else:
-    print("ეს ორი სტრინგი ტოლია")
+    print("tolia")
 
