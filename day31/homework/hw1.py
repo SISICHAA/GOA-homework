@@ -4,7 +4,7 @@
 list = [1, 2, 3, 4, 5, 6]
 
 
-list[2:3] = [10, 20, 30]
+list[2:4] = [10, 20, 30]
 
 
 
@@ -16,7 +16,7 @@ list[2:3] = [10, 20, 30]
 #2)მოცემულია სია --> ["apple", "banana", "cherry", "kiwi", "mango"]
 #შეცვალე პირველი ორი ელემენტი სიით ["pear", "plum"].
 fruit = ["apple", "banana", "cherry", "kiwi", "mango"]
-fruit[:1] = ["pear", "plum"]
+fruit[:2] = ["pear", "plum"]
 print(fruit)
 
 
@@ -41,7 +41,7 @@ print(word)
 color = ["red", "green", "blue", "yellow", "black", "white"]
 
 
-color[1:] = ["purple", "orange"]
+color[2:5] = ["purple", "orange"]
 print(color)
 
 
@@ -59,12 +59,12 @@ name[:] = ["red", "green", "blue", "yellow", "black", "white"]
 
 # 6) მომხმარებელმა შეიყვანოს რიცხვი — შეამოწმე ლუწია თუ კენტი ეს რიცხვი , თუ ლუწია დაპრინტე --> "Even" ,თუ კენტია დაპრინტე --> "Odd".
 
-input = int(input("enter random number"))
+enter = int(input("enter random number"))
 
-if input % 2 == 1:
+if enter % 2 == 1:
     print("this number is odd")
 
-elif input % 2 == 0:
+elif enter % 2 == 0:
     print("number is even")
 
 else:
@@ -76,7 +76,7 @@ else:
 
 numbers = [5, 8, 13, 10, 7, 4] 
 
-if numbers[2] % 2 == 0:  
+if numbers[3] % 2 == 0:  
     print("Even number")
 else:
     print("Odd number")
@@ -95,10 +95,10 @@ elif last % 2 != 0 and last < 50:
 
 int = [1, 4, 5, 6, 7, 8, 98, 0, 2, ]
 
-if int[4] % 2 == 0 or int[4] > 100:
+if int[5] % 2 == 0 or int[5] > 100:
     print("even or more than 100")
 
-elif int[2] % 2 == 1 or int[2] < 100:
+elif int[3] % 2 == 1 or int[3] < 100:
     print("odd or less than 100")
 # ==============================================================
 
