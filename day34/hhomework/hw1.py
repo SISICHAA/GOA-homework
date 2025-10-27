@@ -27,7 +27,7 @@ for i in range(len(words)):
     if len(words[i]) % 15 == 0:
 
 
-        print(words(i))
+        print(words[i])
 
 
 
@@ -58,7 +58,9 @@ liss = ["lasha", "meraba", "salamaleikum", "kebab"]
 
 
 for i in range(len(liss)):
+
     if len(liss[i]) == 5:
+        
         print(liss[i])
 
 
