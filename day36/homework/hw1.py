@@ -1,52 +1,52 @@
-# # 1) მომხმარებელს შემოატანინეთ სიტყვა.  
-# # -> იტერაციით გაიარეთ თითო ასო  
-# # -> თუ შეხვდებით ასო 'e'-ს ან 'E'-ს გაჩერდით (break)  
-# # -> დაბეჭდეთ მხოლოდ ის ასოები, რაც მანამდე იყო  
+# 1) მომხმარებელს შემოატანინეთ სიტყვა.  
+# -> იტერაციით გაიარეთ თითო ასო  
+# -> თუ შეხვდებით ასო 'e'-ს ან 'E'-ს გაჩერდით (break)  
+# -> დაბეჭდეთ მხოლოდ ის ასოები, რაც მანამდე იყო  
 
 
-# enter = input()
+enter = input()
 
-# last = ""
+last = ""
 
-# for i in enter:
-#     if i == "e" or i == "E":
-#         break
-#     last += i
-#     print(last)
-
-
-
-# # 2) მომხმარებელს შემოატანინეთ წინადადება.  
-# # -> შეამოწმეთ არის თუ არა ტექსტში სიტყვა 'bad'  
-# # -> თუ არის, დაპრინტეთ "აკრძალული სიტყვა!"  
-# # -> თუ არაა, დაპრინტეთ "ყველაფერი რიგზეა"  
+for i in enter:
+    if i == "e" or i == "E":
+        break
+    last += i
+    print(last)
 
 
 
-# enter = input()
-
-# if enter == "bad":
-#     print("akrdzzaluli sityva")
-# else:
-#     print("yvelaferi rigzea")
+# 2) მომხმარებელს შემოატანინეთ წინადადება.  
+# -> შეამოწმეთ არის თუ არა ტექსტში სიტყვა 'bad'  
+# -> თუ არის, დაპრინტეთ "აკრძალული სიტყვა!"  
+# -> თუ არაა, დაპრინტეთ "ყველაფერი რიგზეა"  
 
 
 
+enter = input()
+
+if "bad" in enter:
+    print("akrdzzaluli sityva")
+else:
+    print("yvelaferi rigzea")
 
 
-# # # 3) მომხმარებელს შემოატანინეთ წინადადება.  
-# # # -> დაუარეთ ტექსტს for ციკლით  
-# # # -> გამოტოვეთ ყველა space => ' '
-# # # -> დაბეჭდეთ ყველა დანარჩენი სიმბოლო  
 
 
 
-# inp = input()
+# 3) მომხმარებელს შემოატანინეთ წინადადება.  
+# -> დაუარეთ ტექსტს for ციკლით  
+# -> გამოტოვეთ ყველა space => ' '
+# -> დაბეჭდეთ ყველა დანარჩენი სიმბოლო  
 
-# for i in inp:
-#     if i == " ":
-#         continue
-#     print(i)
+
+
+inp = input()
+
+for i in inp:
+    if i == " ":
+        continue
+    print(i)
 
 
 
@@ -64,7 +64,7 @@
 inp = input("enter a word: ")
 
 for i in inp:
-    if i in "aeiou":
+    if i in ["a", "e", "i", "o", "u"]:
         continue
     print(i)
 
@@ -115,7 +115,7 @@ num2 = int(input("enter second number: "))
 
 count = 0
 
-for i in range(num, num2):
+for i in range(num, num2 + 1):
     if i % 3 == 0:
         count += 1
         if count == 3:
