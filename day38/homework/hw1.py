@@ -75,6 +75,6 @@ end = int(input("შეიყვანე end: "))
 step = int(input("შეიყვანე step: "))
 
 
-for num in range(start, end, step):
-    if num % 2 == 0:
-        print(num)
+for i in range(start, end, step):
+    if i % 2 == 0:
+        print(i)
