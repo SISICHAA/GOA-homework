@@ -64,8 +64,6 @@ for num in numbers:
 
 
 count = len(numbers)
-
-
 average = total / count
 
 print("საშუალო არითმეტიკული:", average)
