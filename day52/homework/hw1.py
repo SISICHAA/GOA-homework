@@ -25,25 +25,19 @@ print(names1)
 
 # 2) შექმენით სტრინგის ცვლადი და ცარიელი სია. სტრინგში მყოფი დიდი ასოები გახადეთ პატარა და ამ სიაში ჩაამატეთ, ხოლო სტრინგში მყოფი პატარა ასოები გახადეთ დიდი და ასევე ჩააგდეთ ამ სიაში. დაპრინტეთ საბოლოო სია, გამოიყენეთ while ციკლი.
 
-
-
 word = "HeloWorld"
-
-list = []
+result = []
 
 i = 0
 while i < len(word):
-
-    i = word[i]
-
-    if i.upper():
-
-        list.append(i.lower())
+    c = word[i]
+    if c.isupper():
+        result.append(c.lower())
     else:
-        list.append(i.upper())
+        result.append(c.upper())
     i += 1
 
-print(list)
+print(result)
 
 
 
@@ -52,30 +46,26 @@ print(list)
 
 # 3) შექმენით სახელებით სავსე სია, ასევე შექმენით ცარიელი სია, თუ სიტყვის ყველა ასო არის პატარა, მაშინ ამ სიტყვის ყველა ასო გახადეთ დიდი და შესაბამისი სიის ფუნქციის გამოყენებით ჩასვით ეს სიტყვა ცარიელი სიის დასაწყისში, ხოლო თუ სიტყვის ყველა ასო არის დიდი, მაშინ ამ სიტყვის ყველა ასო გახადეთ პატარა და შესაბამისი სიის ფუნქციის გამოყენებით ჩასვით ეს სიტყვა ცარიელი სიის ბოლოში. ბოლოს დაპრინტეთ მიღებული სია. გამოიყენეთ for ციკლი.
 
-
-names1 = ["rustavi", "Gori", "telavi", "Kobuleti", "chiatura", "Ozurgeti"]
-
+names1 = ["rustavi", "GORI", "telavi", "KOBULETI", "chiatura"]
 names2 = []
 
-for i in names1:
-    if i.lower():
-        names2.insert(0, i.upper())
-    elif i.upper():
-        names2.append(i.lower())
+for name in names1:
+    if name.islower():
+        names2.insert(0, name.upper())
+    elif name.isupper():
+        names2.append(name.lower())
+
+print(names2)
 
 
 # 4) შექმენით ქალაქების სია, წაშალეთ pop() ან remove() ფუნქციით ყველა ის სიტყვა რომლის ყველა ასო არის დიდი, ხოლო ყველა სხვა სიტყვას ყველა ასო გაუხადეთ დიდი. დაპრინტეთ საბოლოო შედეგი. გამოიყენეთ while ციკლი.
 
-
-cities = ["TBILISI", "lagodexi", "QUTAISI", "ZUGDIDI", "SENAKI" , "POTI", "marvili" ]
+cities = ["TBILISI", "lagodexi", "QUTAISI", "ZUGDIDI", "SENAKI", "POTI", "marvili"]
 
 i = 0
 while i < len(cities):
-
-    if cities[i].upper():
-
+    if cities[i].isupper():
         cities.pop(i)
-
     else:
         cities[i] = cities[i].upper()
         i += 1
@@ -83,21 +73,30 @@ while i < len(cities):
 print(cities)
 
 # 5) შექმენით გვარებით სავსე სია, თუ სიტყვის ყველა ასო არის პატარა, მაშინ ეს სიტყვა ამოშალეთ ამ სიიდან და თავიდან ჩაამატეთ იგივე სიაში, ოღონდ ერთი ინდექსით მარჯვნივ, და ყველა ასო ჰქონდეს დიდი. ხოლო თუ სიტყვის ყველა ასო არის დიდი, მაშინ ეს სიტყვა ამოშალეთ ამ სიიდან და თავიდან ჩაამატეთ იგივე სიაში, ოღონდ ერთი ინდექსით მარცხნივ, და ყველა ასო ჰქონდეს პატარა. იმუშავეთ ერთ სიაში, გამოიყენეთ while ციკლი.
-
-
-names1 = ["rustavi", "Gori", "telavi", "Kobuleti", "chiatura", "Ozurgeti"]
+names1 = ["arabuli", "GOGIA", "gvinjilia", "MUZASHVILI"]
 
 i = 0
 while i < len(names1):
-    if names1[i].lower():
+    word = names1[i]
+
+    if word.islower():
         names1.pop(i)
-        names1.insert(i, names1[i].upper())
-    elif names1[i].upper():
+        names1.insert(i + 1, word.upper())
+        i += 2
+    elif word.isupper():
         names1.pop(i)
-        names1.insert(i, names1[i].lower())
-    i += 1
+
+        if i == 0:
+            names1.insert(0, word.lower())
+        else:
+            names1.insert(i - 1, word.lower())
+
+        i += 1
+    else:
+        i += 1
 
 print(names1)
+
 
 
 # 6) შექმენით სტრინგის ცვლადი და ცარიელი სია, თუ სტრინგის ასო არის პატარა, მაშინ ცარიელ სიაში ჩაამატეთ "+" ნიშანი, ხოლო თუ სტრინგის ასო არის დიდი, მაშინ ცარიელ სიაში ჩაამატეთ "-" ნიშანი. თუ მინუსების რაოდენობა სიაში არის ლუწი, მაშინ წაშალე ყველა "+" ნიშანი, ხოლო თუ მინუსების რაოდენობა სიაში არის კენტი, წაშალე ყველა "-" ნიშანი. "+" და "-" -ების თავიდან სიაში ჩასაგდებად გამოიყენეთ for ციკლი, ხოლო "+" ან "-" -ების წასაშლელად გამოიყენეთ while ციკლი.
@@ -106,6 +105,23 @@ print(names1)
 
 
 # 7) შექმენით წინადადების სტრინგის ცვლადი და ცარიელი სია, ცარიელ სიაში ჩაამატეთ სიტყვები ცალ-ცალკე, არა ასოები, არამედ მთლიანი სიტყვები. ამაზე იჭყლიტეთ ტვინი, წარმატებებს გისურვებთ.
+
+sente = "hello broo im saba"
+
+i1 = []
+word = ""
+
+for i in sente:
+    if i != " ":
+        word += i
+    else:
+        i1.append(word)
+if word:
+    i1.append(word)
+
+print(i1)
+
+
 
 
 
