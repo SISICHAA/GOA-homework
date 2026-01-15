@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #დღეს ჩვენ ვისწავლეთ სამი ოპერატორი ესენია ** // % აქედან ** nishnavs xarisxs
 print(10 ** 9)
 print(233 ** 32)
@@ -16,7 +16,6 @@ print(43 % 23)
 #siebs viyenebt bevri informaciis ertad damushavebistvis
 list = [True , 32 , 32.332 , "sava"]
 print(list)
-=======
 #chven dges viswavlet 3 matematikuri operatori esenia // ** da % aqedan // gvanaxebs tu ramdenjer  chaeteva meore ricvxi pirvel ricxvshi magalitad
 print(10 // 3)
 print(66 // 34)
@@ -35,4 +34,4 @@ print(123 % 23)
 list_GOA = [123,32.32,True,"saava"]
 print(list_GOA)
 
->>>>>>> 201f8cd6a3c9aca3c587d28d5422d6668c065dbd
+
