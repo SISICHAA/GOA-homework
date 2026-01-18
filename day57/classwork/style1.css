@@ -6,4 +6,9 @@ div li {
 
 }
 
-nav li
+nav li {
+    color: brown;
+    font-size: 50px;
+    border: 2px solid purple;
+    background-color: yellow;
+}
