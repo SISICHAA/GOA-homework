@@ -2,7 +2,9 @@
 
 
 names = ["saba", "nika", "LuKA", "Misho", "giorgi"]
+
 name = []
+
 for i in names:
     if i == i.lower() and i[0] == "g":
         name.append("Goga")
