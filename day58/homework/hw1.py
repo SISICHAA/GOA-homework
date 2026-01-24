@@ -3,22 +3,22 @@
 
 
 
-# num = [1, 2, 3, 4, 5, 6, 77, 8 , 9]
+num = [1, 2, 3, 4, 5, 6, 77, 8 , 9]
 
-# biggest = num[0]
-# second_biggest = num[0]
-# for i in num:
-#     if i > biggest:
+biggest = num[0]
+second_biggest = num[0]
+for i in num:
+    if i > biggest:
 
-#         second_biggest  = biggest
+        second_biggest  = biggest
 
-#         biggest = i
+        biggest = i
 
-#     elif i > second_biggest and i != biggest:
+    elif i > second_biggest and i != biggest:
 
-#         second_biggest = i
+        second_biggest = i
 
-# print(second_biggest)
+print(second_biggest)
 
 
 
