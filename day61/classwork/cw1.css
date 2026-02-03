@@ -1,0 +1,63 @@
+#name1 {
+    color: red;
+    text-align: center;
+    font-size: 50 px;
+}
+#name2 {
+    color: purple;
+    text-align: center;
+    font-size: 60 px;
+}
+#name3 {
+    color: yellow;
+    text-align: right;
+    font-size: 50 px;
+}
+#name4 {
+    color: red;
+    text-align: left;
+    font-size: 30 px;
+}
+#name5 {
+    color: green;
+    text-align: center;
+    font-size: 50 px;
+}
+
+#n1  { 
+    color: red;
+
+    font-size: 50 px;
+
+    text-align: center;
+    border: none;
+
+
+}
+
+
+#n2  { 
+    color: red;
+
+    font-size: 40 px;
+
+    text-align: center;
+    border: 2px solid black;
+    
+
+}
+
+
+#n3  { 
+    color: red;
+
+    font-size: 40 px;
+
+    text-align: center;
+    border: none;
+    
+
+}
+
+
+
