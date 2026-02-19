@@ -123,12 +123,39 @@ data = [True, 123.332, 123, "nika", 12312, 45.53, 12312, 12312, 45.53, "nika", "
 
 
 
+data = [True, 123.332, 123, "nika", 12312, 45.53, 12312, 12312, 45.53, "nika", "nika"]
+
+i = 0
+while i < len(data):
+    element = data[i]
+
+    while data.count(element) > 1:
+        data.remove(element)
+
+    i += 1
+
+print(data)
 
 
 
 
 # 6)  მომხმარებელს შემოატანინეთ წინადადება და დაპრინტეთ ამ წინადადებაში მყოფი ყველაზე გრძელი სიტყვა, გამოიყენეთ while ციკლი, არ გამოიყენოთ max() ფუნქცია.
 
+sentence = input("შეიყვანეთ წინადადებa:  ")
+
+words = sentence.split()
+
+i = 0
+
+longest_word = ""
+
+while i < len(words):
+
+    if len(words[i]) > len(longest_word):
+        longest_word = words[i]
+    i += 1
+
+print(longest_word)
 
 
 
